@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Code Editor</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <label> <i class="fa-brands fa-html5"></i>  HTML</label>
+            <textarea id="html" cols="30" rows="10" onkeyup="run()"></textarea>
+
+            <label> <i class="fa-brands fa-css3"></i>  CSS</label>
+            <textarea id="css" cols="30" rows="10" onkeyup="run()"></textarea>
+
+            <label> <i class="fa-brands fa-js"></i>  JAVASCRIPT</label>
+            <textarea id="js" cols="30" rows="10" onkeyup="run()"></textarea>
+        </div>
+        <div class="right">
+            <label><i class="fa-solid fa-play"></i>  OUTPUT</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
